@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Dangnhap";
+    Layout = "~/Views/Shared/_LayOut.cshtml";
+}
+
+<h2></h2>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="http://www.batdongsan43.com">
+
+    <title>BDS43</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="~/Content/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/fonts/font-slider.css" type="text/css">
+
+    <!-- jQuery and Modernizr-->
+    <script src="~/Content/js/jquery-2.1.1.js"></script>
+
+    <!-- Core JavaScript Files -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body
+
+<div id="page-content" class="single-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="account.html">Tài khoản</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading"><h2>Đăng nhập</h2></div>
+                <form name="form1" id="ff1" method="post" action="login.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tên người dùng :" name="Tên người dùng" id="Tên người dùng" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Mật khẩu :" name="Mật khẩu" id="Mật khẩu" required="">
+                    </div>
+                    <button type="submit" class="btn btn-1" name="Đăng nhập" id="Đăng nhập">Đăng nhập</button>
+                    <a href="#">Quên mật khẩu ?</a>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="heading"><h2>Người dùng mới ? Tạo tài khoản.</h2></div>
+                <form name="form2" id="ff2" method="post" action="register.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tên" name="Tên" id="Tên" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Họ " name="Họ" id="Họ" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Địa chỉ Email " name="Địa chỉ Email" id="Địa chỉ email" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Điện thoại " name="Điện thoại" id="Điện thoại" required="">
+                    </div>
+                    <div class="form-group">
+                        <input name="gender" id="gender" type="radio"> Nam <input name="Giới tính" id="Giới tính " type="radio"> Nữ
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Mật khẩu " name="Mật khẩu" id="password" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Nhập lại mật khẩu " name="Nhập lại mật khẩu" id="repassword" required="">
+                    </div>
+                    <div class="form-group">
+                        <input name="Đồng ý" id="Đồng ý" type="checkbox"> Tôi đồng ý với điều khoản thuộc trang web của bạn.
+                    </div>
+                    <button type="submit" class="btn btn-1">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<body>

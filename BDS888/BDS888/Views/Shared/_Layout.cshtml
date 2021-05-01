@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Bất động sản 43", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Top-->
+    <nav id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <select class="language">
+                        <option value="VietNam" selected="">VietNam</option>
+                    </select>
+                    <select class="currency">
+                        <option value="VND" selected="">VND</option>
+                    </select>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="top-link">
+                        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> Tài khoản của tôi</a></li>
+                        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Header-->
+    <header class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="~/Content/logo"><img src="~/Content/images/logo.png"></div>
+            </div>
+            <div class="col-md-4">
+                <form class="form-search">
+                    <input type="text" class="input-medium search-query">
+                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>CART : 0 ITEM</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+    <footer>
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="row">
+                    <div class="col-md-3 col-footer footer-1">
+                        <img src="~/Content/images/logofooter.png">
+                        <p>BDS43-Hạnh phúc trong tầm tay .</p>
+                    </div>
+                    <div class="col-md-3 col-footer footer-2">
+                        <div class="heading"><h4>Dịch vụ khách hàng </h4></div>
+                        <ul>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản và điều kiện</a></li>
+                            <li><a href="#">Liên hệ chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-3">
+                        <div class="heading"><h4>Tài khoản của tôi </h4></div>
+                        <ul>
+                            <li><a href="#">Tài khoản của tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-4">
+                        <div class="heading"><h4>Liên hệ với chúng tôi </h4></div>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-home"></span>Ngu Hanh Son,Da Nang,Viet Nam</li>
+                            <li><span class="glyphicon glyphicon-earphone"></span>+(8)905897999 </li>
+                            <li><span class="glyphicon glyphicon-envelope"></span>infor@yoursite.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        Website được tạo bởi BĐS43
+                        Since 2021
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pull-right">
+                            <ul>
+                                <li><img src="~/Content/images/visa-curved-32px.png"></li>
+                                <li><img src="~/Content/images/paypal-curved-32px.png"></li>
+                                <li><img src="~/Content/images/discover-curved-32px.png"></li>
+                                <li><img src="~/Content/images/maestro-curved-32px.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

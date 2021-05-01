@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="http://www.365bootstrap.com">
+
+    <title>BDS43</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="~/Content/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="~/Content/fonts/font-slider.css" type="text/css">
+
+    <!-- jQuery and Modernizr-->
+    <script src="~/Content/js/jquery-2.1.1.js"></script>
+
+    <!-- Core JavaScript Files -->
+    <script src="~/Content/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--Top-->
+    <nav id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <select class="language">
+                        <option value="VietNam" selected="">VietNam</option>
+                    </select>
+                    <select class="currency">
+                        <option value="VND" selected="">VND</option>
+                    </select>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="top-link">
+                        <li><a href="account.html"><span class="glyphicon glyphicon-user"></span> Tài khoản của tôi</a></li>
+                        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Header-->
+    <header class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="~/Content/logo"><img src="~/Content/images/logo.png"></div>
+            </div>
+            <div class="col-md-4">
+                <form class="form-search">
+                    <input type="text" class="input-medium search-query">
+                    <button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div id="cart"><a class="btn btn-1" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span>CART : 0 ITEM</a></div>
+            </div>
+        </div>
+    </header>
+    <!--Navigation-->
+    <nav id="menu" class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <span id="heading" class="visible-xs">Categories</span>
+                <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Kiến Trúc Sư>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                    <ul class="list-unstyled">
+                                        <li><a href="category.html">Võ Trọng Nghĩa</a></li>
+                                        <li><a href="category.html">Hoàng Thúc Hào</a></li>
+                                        <li><a href="category.html">Nguyễn Tiến Thuận</a></li>
+                                        <li><a href="category.html">Nguyễn Hòa Hiệp</a></li>
+                                        <li><a href="category.html">Nguyễn Trường Lưu</a></li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Cần bán
+                            <div class="dropdown-menu">
+                                <div class="dropdown-inner">
+                                    <ul class="list-unstyled">
+                                        <li><a href="category.html">Biệt Thự</a></li>
+                                        <li><a href="category.html">Căn Hộ</a></li>
+                                        <li><a href="category.html">Nhà Mặt Kiệt</a></li>
+                                        <li><a href="category.html">Nhà Mặt Phố</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Cần Mua>
+                            <div class="dropdown-menu" style="margin-left: -203.625px;">
+                                <div class="dropdown-inner">
+                                    <ul class="list-unstyled">
+                                        <li><a href="category.html">Biệt Thự</a></li>
+                                        <li><a href="category.html">Căn Hộ</a></li>
+                                        <li><a href="category.html">Nhà Mặt Kiệt</a></li>
+                                        <li><a href="category.html">Nhà Mặt Phố</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    </nav>
+    <!--//////////////////////////////////////////////////-->
+    <!--///////////////////HomePage///////////////////////-->
+    <!--//////////////////////////////////////////////////-->
+    @RenderBody()
+ 
+    </div>
+    <footer>
+        <div class="container">
+            <div class="wrap-footer">
+                <div class="row">
+                    <div class="col-md-3 col-footer footer-1">
+                        <img src="~/Content/images/logofooter.png">
+                        <p>BDS43-Hạnh phúc trong tầm tay .</p>
+                    </div>
+                    <div class="col-md-3 col-footer footer-2">
+                        <div class="heading"><h4>Dịch vụ khách hàng </h4></div>
+                        <ul>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <li><a href="#">Điều khoản và điều kiện</a></li>
+                            <li><a href="#">Liên hệ chúng tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-3">
+                        <div class="heading"><h4>Tài khoản của tôi </h4></div>
+                        <ul>
+                            <li><a href="#">Tài khoản của tôi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-footer footer-4">
+                        <div class="heading"><h4>Liên hệ với chúng tôi </h4></div>
+                        <ul>
+                            <li><span class="glyphicon glyphicon-home"></span>Ngu Hanh Son,Da Nang,Viet Nam</li>
+                            <li><span class="glyphicon glyphicon-earphone"></span>+(8)905897999 </li>
+                            <li><span class="glyphicon glyphicon-envelope"></span>infor@yoursite.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        Website được tạo bởi BĐS43
+                        Since 2021
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pull-right">
+                            <ul>
+                                <li><img src="~/Content/images/visa-curved-32px.png"></li>
+                                <li><img src="~/Content/images/paypal-curved-32px.png"></li>
+                                <li><img src="~/Content/images/discover-curved-32px.png"></li>
+                                <li><img src="~/Content/images/maestro-curved-32px.png"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

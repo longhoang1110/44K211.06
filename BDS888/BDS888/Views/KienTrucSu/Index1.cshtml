@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BDS888.Models.KienTrucSu>
+
+@{
+    ViewBag.Title = "Index1";
+    Layout = "~/Views/_HomeLayOut/HomeLayOut.cshtml";
+}
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaKTS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenKTS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThongTin)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaKTS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKTS)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThongTin)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
